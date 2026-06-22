@@ -18,7 +18,7 @@ inline bool IsZeroValue(const float& value) {
 }
 
 inline bool IsZeroValue(const long double& value) {
-    return std::fabsl(value) < 1e-15L;
+    return std::fabs(value) < 1e-15L;
 }
 
 inline bool IsZeroValue(const std::complex<double>& value) {
